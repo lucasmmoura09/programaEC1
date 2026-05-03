@@ -9,7 +9,7 @@ print("3 - Tênis (200)")
 opcao = int(input("Escolha: "))
 quantidade = int(input("Quantidade: "))
 
-# escolha do produto (switch)
+# switch (match-case)
 match opcao:
     case 1:
         produto = "Camisa"
@@ -26,7 +26,6 @@ match opcao:
 
 total = preco * quantidade
 
-# condição
 if total > 100:
     total = total * 0.9
     desconto = True
@@ -34,9 +33,11 @@ else:
     desconto = False
 
 print("\nResumo:")
-print(nome, produto, quantidade)
+print("Cliente:", nome)
+print("Produto:", produto)
+print("Quantidade:", quantidade)
 
 if desconto:
-    print("Teve desconto")
+    print("Desconto aplicado")
 
 print("Total:", total)
