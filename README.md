@@ -1,5 +1,9 @@
 # Sistema de Atendimento em Loja
 Aluno: Lucas Morais de Moura
+Curso: Bacharelado Interdisciplinar em Ciencias e Tecnologia.
+Disciplina: Fundamentos de Computação
+Turma: CCCT0006  T04
+Professor: Rondineli Seba
 
 ##  Descrição
 
