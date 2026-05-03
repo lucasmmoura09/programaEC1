@@ -9,7 +9,10 @@ O sistema calcula o total.
 Se passar de 100 reais, aplica desconto.
 
 ## Como executar
-Rodar o arquivo Appy.py no Python.
+1. Instale o Python
+2. Abra o terminal na pasta do projeto
+3. Execute:
+python Appy.py
 
 ## Exemplo
 Nome: Lucas
