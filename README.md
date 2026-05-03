@@ -1,4 +1,5 @@
 # Sistema de Atendimento em Loja
+Aluno: Lucas Morais de Moura
 
 ##  Descrição
 
