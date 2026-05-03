@@ -1,6 +1,6 @@
 # Sistema de Atendimento em Loja
 
-## 📌 Descrição
+##  Descrição
 
 Este programa simula um sistema simples de atendimento em uma loja, permitindo que o usuário escolha produtos, informe a quantidade e visualize o valor total da compra.
 
@@ -8,7 +8,7 @@ O sistema foi desenvolvido utilizando conceitos fundamentais da linguagem Python
 
 ---
 
-## 🧠 Lógica do Programa
+##  Lógica do Programa
 
 O programa inicia solicitando o nome do usuário.
 
@@ -36,7 +36,7 @@ Durante a execução, o programa:
 
 ---
 
-## ⚙️ Funcionalidades
+##  Funcionalidades
 
 * Entrada de dados pelo usuário
 * Processamento de informações
@@ -56,7 +56,7 @@ Durante a execução, o programa:
 
 ---
 
-## ▶️ Como executar
+##  Como executar
 
 1. Instale o Python
 2. Abra o terminal na pasta do projeto
@@ -68,7 +68,7 @@ python Appy.py
 
 ---
 
-## 💻 Exemplo de uso
+##  Exemplo de uso
 
 ```
 Digite seu nome: Lucas
@@ -92,7 +92,7 @@ Total: 135.0
 
 ---
 
-## 🚀 Observações
+##  Observações
 
 O programa utiliza a estrutura `match-case` para simular um switch na escolha do produto, e `if/else` para aplicar condições como o desconto.
 
