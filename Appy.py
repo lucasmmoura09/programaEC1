@@ -1,57 +1,67 @@
-print("=== LOJA ===")
+print("=== SISTEMA DE LOJA ===")
 
-# entrada (str)
 nome = input("Digite seu nome: ")
 
-print("\n1 - Camisa (50.0)")
-print("2 - Calça (100.0)")
-print("3 - Tênis (200.0)")
+while True:
 
-# entrada (int)
-opcao = int(input("Escolha o produto: "))
-quantidade = int(input("Quantidade: "))
+    print("\n=== MENU DE PRODUTOS ===")
+    print("1 - Camisa (50.0)")
+    print("2 - Calça (100.0)")
+    print("3 - Tênis (200.0)")
+    print("0 - Sair")
 
-# variáveis
-produto = ""
-preco = 0.0   # float
-desconto = False  # bool
+    try:
+        opcao = int(input("Escolha o produto: "))
+    except:
+        print("Digite apenas números!")
+        continue
 
-# ----------------------------
-# SWITCH (match-case)
-# ----------------------------
-match opcao:
-    case 1:
-        produto = "Camisa"
-        preco = 50.0
-    case 2:
-        produto = "Calça"
-        preco = 100.0
-    case 3:
-        produto = "Tênis"
-        preco = 200.0
-    case _:
-        print("Opção inválida")
-        exit()
+    if opcao == 0:
+        print("Encerrando sistema...")
+        break
 
-# processamento
-total = preco * quantidade
+    if opcao not in [1, 2, 3]:
+        print("Opção inválida!")
+        continue
 
-# ----------------------------
-# IF / ELSE (condição)
-# ----------------------------
-if total > 100:
-    total = total * 0.9
-    desconto = True
-else:
+    try:
+        quantidade = int(input("Quantidade: "))
+        if quantidade <= 0:
+            print("Quantidade inválida!")
+            continue
+    except:
+        print("Digite um número válido!")
+        continue
+
+    produto = ""
+    preco = 0.0
     desconto = False
 
-# saída
-print("\n=== RESUMO ===")
-print("Cliente:", nome)
-print("Produto:", produto)
-print("Quantidade:", quantidade)
+    match opcao:
+        case 1:
+            produto = "Camisa"
+            preco = 50.0
+        case 2:
+            produto = "Calça"
+            preco = 100.0
+        case 3:
+            produto = "Tênis"
+            preco = 200.0
 
-if desconto:
-    print("Desconto aplicado: 10%")
+    total = preco * quantidade
 
-print("Total:", total)
+    if total > 100:
+        total = total * 0.9
+        desconto = True
+    else:
+        desconto = False
+
+    print("\n=== RESUMO ===")
+    print("Cliente:", nome)
+    print("Produto:", produto)
+    print("Quantidade:", quantidade)
+
+    if desconto:
+        print("Desconto aplicado: 10%")
+
+    print("Total:", total)
