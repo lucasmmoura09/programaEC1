@@ -1,6 +1,6 @@
 # Sistema de Atendimento em Loja
 * Aluno: Lucas Morais de Moura
-* Curso: Bacharelado Interdisciplinar em Ciencias e Tecnologia.
+* Curso: Bacharelado Interdisciplinar em Ciências e Tecnologia.
 * Disciplina: Fundamentos de Computação
 * Professor: Rondineli Seba
 
